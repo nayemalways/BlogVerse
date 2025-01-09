@@ -35,9 +35,9 @@ const SignUpForm = () => {
             </div>
          
             {/* Button  */}
-            <button class="btn btn-primary col-12" type="button">Button</button>
+            <button className="btn btn-primary col-12" type="button">Button</button>
                  
-      </form>
+        </form>
       
     );
 };
