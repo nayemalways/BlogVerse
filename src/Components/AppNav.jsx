@@ -42,7 +42,6 @@ const AppNav = () => {
                 {/* Profile and Login Sign up side  */}
                 <div className="col-md-4 ">
                     <ProfileIcon/>
-
                 </div>
 
 
