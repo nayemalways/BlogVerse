@@ -1,10 +1,12 @@
 # Blog Verse
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-
+*
+*
 ## About
 
-- This application basically a Bloggin app.
+- This application basically a Blogging app named Blog Verse
+- User can post their own blog.
+- A user can remove , update their post.
+
+## Features
+- This application created by MERN technology (MongoDB, Express, React, Node).
+- Token base authetication like JWT(Json Web Token) for authorized user's.
