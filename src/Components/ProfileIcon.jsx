@@ -28,8 +28,8 @@ const ProfileIcon = () => {
     return (
         <>
             <div className="h-100 d-flex justify-content-center align-items-center gap-3">
-                <button className="btn btn-outline-primary">Sign Up</button>
-                <button className="btn btn-outline-primary">Login</button>
+                <Link to='/register' className="btn btn-outline-primary">Sign Up</Link>
+                <Link to='/login' className="btn btn-outline-primary">Login</Link>
                 <div
                     onClick={toggleProfileBar}
                     className="profile-icon-custom position-relative"
