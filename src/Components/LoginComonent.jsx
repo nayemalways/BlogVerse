@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 const LoginComonent = () => {
     return (
-        <form>
+        <form className='border rounded rounded-4 p-5 bg-warning bg-opacity-10'>
+            <h1 className='text-center text-primary mb-4'>Login</h1>
             <div className="row">
                     <div className="mb-3 col-12">
                         <label htmlFor="email" className="form-label">Email</label>

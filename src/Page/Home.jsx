@@ -1,6 +1,5 @@
 import React from 'react';
-import AppNav from '../Components/AppNav';
-import Layout from '../Layout/Layout';
+ import Layout from '../Layout/Layout';
 
 const Home = () => {
     return (

@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SignUpForm = () => {
     return (
-        <form>
+        <form className='border rounded rounded-4 p-5 bg-warning bg-opacity-10'>
+            <h1 className='text-center text-primary mb-4'>Registration</h1>
             <div className="row">
                     <div className="mb-3 col-6">
                         <label htmlFor="firstName" className="form-label">First Name</label>
@@ -27,9 +29,12 @@ const SignUpForm = () => {
                         <input type="text" className="form-control" id="phoneNumber" placeholder='Enter phone number'/>
                     </div>
 
-                    <div className="mb-3 col-12">
+                    <div className="mb-3 col-6">
                         <label htmlFor="profileImg" className="form-label">Profile Image</label>
-                        <input type="text" className="form-control" id="profileImg" placeholder='Please provide a valid image link'/>
+                        <input type="file" className="form-control" id="profileImg" placeholder='Please provide a valid image link'/>
+                    </div>
+                    <div className="mb-3 col-6">
+                         <Link to='/login'>Already have an account?</Link>
                     </div>
                     
             </div>
