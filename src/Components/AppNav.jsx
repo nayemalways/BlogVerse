@@ -8,7 +8,7 @@ const AppNav = () => {
   
 
     return (
-         <div className="navbar__custom__style bg-body-tertiary">
+         <div className="navbar__custom__style sticky-top">
             <div className='container-fluid '>
             <div className="row ">
 

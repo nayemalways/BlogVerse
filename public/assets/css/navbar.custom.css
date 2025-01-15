@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(209, 209, 212);
+    background: linear-gradient(90deg, rgb(141, 136, 227) 0%);
 }
 
 .profile-icon-custom{
@@ -21,4 +23,5 @@
 }
 
  
+
  
