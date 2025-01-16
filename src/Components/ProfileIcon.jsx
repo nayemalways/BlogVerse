@@ -28,18 +28,8 @@ const ProfileIcon = () => {
     return (
         <>
             <div className="h-100 d-flex justify-content-center align-items-center gap-3">
-                <Link to='/register' className="btn btn-light  ">Register</Link>
-                <Link to='/login' className="btn btn-outline-light  ">Login</Link>
-                <div
-                    onClick={toggleProfileBar}
-                    className="profile-icon-custom position-relative"
-                    title="Profile"
-                >
-                    <Image
-                        className="w-100 rounded-circle"
-                        src="public/assets/image/nayem.png"
-                        rounded
-                    />
+                <div onClick={toggleProfileBar} className="profile-icon-custom position-relative border border-3 border-light" title="Profile">
+                    <Image className="w-100 rounded-circle" src="public/assets/image/nayem.png" rounded/>
                 </div>
 
                 {/* Show Profile Bar when toggler is true */}

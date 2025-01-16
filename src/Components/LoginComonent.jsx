@@ -13,9 +13,11 @@ const LoginComonent = () => {
     const formik = useFormik({
         initialValues: {email: '', password: ''},
         onSubmit: async (values) => {
-            console.log(values);
             const result = await ApiRequest("POST", "/login", values);
-            result? navigate('/') : navigate('/login');
+            if(result) {
+                navigate('/');
+            }
+            
         }
     })
     return (
@@ -44,7 +46,7 @@ const LoginComonent = () => {
                             id="password" 
                             placeholder='Enter your password'/>
                     </div>
-                    
+
                     <div className='pb-3 d-flex justify-content-between'>
                         <Link to='/register'>Don't have an account?</Link>
                         <Link to='/find-account'>Forget password?</Link>

@@ -3,7 +3,7 @@ import toast from 'react-hot-toast';
 
 export const ApiRequest = async (method, EndPoint, postBody) => {
     try {
-        const basUrl = `https://blogverse-igtn.onrender.com`;
+        const basUrl = `http://localhost:3002`;
         const config = {
             method: method,
             url: `${basUrl}${EndPoint}`,

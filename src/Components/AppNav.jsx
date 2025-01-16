@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Image, DropdownButton} from 'react-bootstrap';
+import Cookies from 'js-cookie';
+
 import ProfileIcon from './ProfileIcon';
 
 const AppNav = () => {
 
-  
+    const isToken = !!Cookies.get("token");
+    const Button = () => {
+        return (
+            <>
+                <Link to='/register' className="btn btn-light  ">Register</Link>
+                <Link to='/login' className="btn btn-outline-light  ">Login</Link>
+            </>
+        )
+    }
 
     return (
          <div className="navbar__custom__style sticky-top">
@@ -40,8 +49,12 @@ const AppNav = () => {
                 </div>
 
                 {/* Profile and Login Sign up side  */}
-                <div className="col-md-4 ">
-                    <ProfileIcon/>
+                <div className="col-md-4 d-flex justify-content-center align-items-center gap-2">
+                    
+                    
+                    {
+                        isToken ? <ProfileIcon/> : <Button/>
+                    }
                 </div>
 
 
