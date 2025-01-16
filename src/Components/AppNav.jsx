@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 
 import ProfileIcon from './ProfileIcon';
+import { ApiRequest } from './../apiRequest/api.js';
+
+
 
 const AppNav = () => {
-
+    const navigate = useNavigate();
+    // If token found or not
     const isToken = !!Cookies.get("token");
+    // Both button will render conditionaly
     const Button = () => {
         return (
             <>
@@ -14,6 +19,18 @@ const AppNav = () => {
                 <Link to='/login' className="btn btn-outline-light  ">Login</Link>
             </>
         )
+    }
+
+
+    // handling logout option 
+    const handleLogout = async () => {
+        const result = await ApiRequest("GET", "/logout");
+        if(result) {
+            navigate('/'); // Navigate to home page
+            setInterval(() => {
+                window.location.reload(); // and reload
+            },1000)
+        }
     }
 
     return (
@@ -53,7 +70,7 @@ const AppNav = () => {
                     
                     
                     {
-                        isToken ? <ProfileIcon/> : <Button/>
+                        isToken ? <ProfileIcon logout={handleLogout}/> : <Button/>
                     }
                 </div>
 

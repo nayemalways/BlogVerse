@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Image } from 'react-bootstrap';
 
-const ProfileIcon = () => {
-    const [toggler, setToggle] = useState(false);
+const ProfileIcon = ({logout}) => {
 
+    const [toggler, setToggle] = useState(false);
     const toggleProfileBar = () => {
         setToggle(!toggler);
     };
@@ -38,7 +38,7 @@ const ProfileIcon = () => {
                         <Link to="/profile" className="d-block text-decoration-none">
                             Profile
                         </Link>
-                        <button className="btn d-block text-danger">Logout</button>
+                        <button onClick={() => logout()} className="btn d-block text-danger">Logout</button>
                     </div>
                 )}
             </div>
