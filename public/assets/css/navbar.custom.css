@@ -4,8 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(209, 209, 212);
-    background: linear-gradient(90deg, rgb(141, 136, 227) 0%);
+    background: rgb(39, 66, 142);
 }
 
 .profile-icon-custom{

@@ -1,2 +1,12 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'MyFont';  /* Custom name for your font */
+    src: url('../public/assets/font/myFont.ttf') format('truetype');  /* Relative path to the font file */
+    font-weight: normal;
+    font-style: normal;
+  }
   
+  body {
+    font-family: "Inter", serif;
+  }
