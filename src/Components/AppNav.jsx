@@ -8,7 +8,7 @@ const AppNav = () => {
   
 
     return (
-         <div className="navbar__custom__style bg-body-tertiary">
+         <div className="navbar__custom__style sticky-top">
             <div className='container-fluid '>
             <div className="row ">
 
@@ -16,16 +16,16 @@ const AppNav = () => {
                 <div className="col-md-4">
                     <div className="h-100 justify-content-center align-items-center d-flex gap-4 ms-md-5">
                         <Link to="/dashboard">
-                            <i className="fa-brands fa-twitter text-dark" title='Twitter'></i>
+                            <i className="fa-brands fa-twitter text-white" title='Twitter'></i>
                         </Link>
                         <Link to="/dashboard">
-                            <i className="fa-brands fa-linkedin-in text-dark" title='LinkedIn'></i>                       
+                            <i className="fa-brands fa-linkedin-in text-white" title='LinkedIn'></i>                       
                         </Link>
                         <Link to="/dashboard">
-                            <i className="fa-brands fa-instagram text-dark" title='Instagram'></i>                       
+                            <i className="fa-brands fa-instagram text-white" title='Instagram'></i>                       
                         </Link>
                         <Link to="/dashboard">
-                        <i className="fa-brands fa-facebook-f text-dark" title='Facebook'></i>                       
+                        <i className="fa-brands fa-facebook-f text-white" title='Facebook'></i>                       
                         </Link>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const AppNav = () => {
                 <div className="col-md-4 m-auto ">
                     <div className='h-100 d-flex justify-content-center align-items-center '>
                         <Link className='text-center' to='/'>
-                            <img className='w-50 h-100' src="assets\image\Logo.png" alt="Logo" />
+                            <img className='w-50 h-100' src="assets\image\Logo_.png" alt="Logo" />
                         </Link>
                     </div>
                 </div>

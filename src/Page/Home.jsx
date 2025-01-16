@@ -1,12 +1,15 @@
 import React from 'react';
  import Layout from '../Layout/Layout';
+import HeroArea from '../Components/HeroArea';
 
 const Home = () => {
     return (
         <>
             <Layout>
-                <h1>This is home page</h1>
-            </Layout>
+                <div>
+                    <HeroArea/>
+                </div>
+             </Layout>
         </>
     );
 };
