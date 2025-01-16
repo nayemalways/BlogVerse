@@ -24,12 +24,27 @@ const LoginComonent = () => {
             <div className="row">
                     <div className="mb-3 col-12">
                         <label htmlFor="email" className="form-label">Email</label>
-                        <input onChange={formik.handleChange} value={formik.values.email} type="email" className="form-control" name='email' id="email" placeholder='Enter your email'/>
+                        <input 
+                            onChange={formik.handleChange} 
+                            value={formik.values.email} 
+                            type="email" 
+                            className="form-control" 
+                            name='email' 
+                            id="email" 
+                            placeholder='Enter your email'/>
                     </div>
                     <div className="mb-3 col-12">
                         <label htmlFor="password" className="form-label">Password</label>
-                        <input onChange={formik.handleChange} value={formik.values.password} name='password' type="password" className="form-control" id="password" placeholder='Enter your password'/>
+                        <input 
+                            onChange={formik.handleChange} 
+                            value={formik.values.password} 
+                            name='password' 
+                            type="password" 
+                            className="form-control" 
+                            id="password" 
+                            placeholder='Enter your password'/>
                     </div>
+                    
                     <div className='pb-3 d-flex justify-content-between'>
                         <Link to='/register'>Don't have an account?</Link>
                         <Link to='/find-account'>Forget password?</Link>
