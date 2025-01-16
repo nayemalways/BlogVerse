@@ -8,10 +8,11 @@ import { ApiRequest } from './../apiRequest/api.js';
 
 
 const AppNav = () => {
+    // Create navigation method
     const navigate = useNavigate();
     // If token found or not
-    const isToken = !!Cookies.get("token");
-    // Both button will render conditionaly
+    const isToken = !!Cookies.get("token"); // true or false
+    // Under the two button will render conditionaly
     const Button = () => {
         return (
             <>
@@ -22,7 +23,7 @@ const AppNav = () => {
     }
 
 
-    // handling logout option 
+    // handling logout option (This function send as props to 'ProfileIcon' components)
     const handleLogout = async () => {
         const result = await ApiRequest("GET", "/logout");
         if(result) {
