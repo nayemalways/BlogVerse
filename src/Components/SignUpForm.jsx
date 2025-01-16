@@ -141,7 +141,7 @@ const SignUpForm = () => {
                 </div>
             
                 {/* Button  */}
-            <button className="btn btn-primary col-12" type="submit">Button</button>
+            <button className="btn btn-primary col-12" type="submit">Submit</button>
                  
         </form>
         </>
