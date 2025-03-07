@@ -10,4 +10,7 @@ The frontend design is pending because I will build this site using Tailwind CSS
 ## Features
 - This application is created by MERN technology (MongoDB, Express, React, Node).
 - Token-based authentication like JWT(JSON Web Token) for authorized users.
-- Any user can read ba log without login. But whenever they want to post a blog, he will need to be logged in first.
+- Any user can read the blog without login. But whenever they want to post a blog, he will need to be logged in first.
+
+## Backend Repository Link below:
+- https://github.com/nayemalways/BlogSite-backend-project
