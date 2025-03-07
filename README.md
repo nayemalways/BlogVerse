@@ -1,13 +1,13 @@
 # Blog Verse
-*
-*
+The frontend design is pending because I will build this site using Tailwind CSS. (Will be updated) 
+
 ## About
 
-- This application basically a Blogging app named Blog Verse
-- User can post their own blog.
-- A user can remove , update their post.
+- This is a Blogging app named Blog-Verse
+- User can post their blog.
+- A user can remove, update their post.
 
 ## Features
-- This application created by MERN technology (MongoDB, Express, React, Node).
-- Token base authetication like JWT(Json Web Token) for authorized user's.
-- Any user can read blog without login. But whenever they want to post a blog he will need to be logged in first.
+- This application is created by MERN technology (MongoDB, Express, React, Node).
+- Token-based authentication like JWT(JSON Web Token) for authorized users.
+- Any user can read ba log without login. But whenever they want to post a blog, he will need to be logged in first.
